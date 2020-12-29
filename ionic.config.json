@@ -1,0 +1,8 @@
+{
+  "name": "delivecrous",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "dcec2f77"
+}
