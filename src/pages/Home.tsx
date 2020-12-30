@@ -17,45 +17,89 @@ const Home: React.FC = () => {
 
         <IonCard href="./Cow1">
           <IonCardHeader>
-            <IonCardTitle>Vache n°1</IonCardTitle>
+            <IonCardTitle>Vache lambda</IonCardTitle>
           </IonCardHeader>
-          <img src="assets/cow_1.jpg"/>
+          <img src="assets/cow_1.jpg" alt="cow_1"/>
           <IonCardContent>
-            Meuh
+           28€
+            <IonCheckbox></IonCheckbox>
+            
           </IonCardContent>
-          <IonCheckbox class="item-checkbox-right"></IonCheckbox>
-        
+          
+
         </IonCard>
- 
 
 
-        <IonCard>
+
+        <IonCard href="./Cow2">
           <IonCardHeader>
-            <IonCardTitle>Vache n°2</IonCardTitle>
+            <IonCardTitle>Vache sourire</IonCardTitle>
           </IonCardHeader>
-          <img src="assets/cow_2.jpg"/>
+          <img src="assets/cow_2.jpg" alt="cow_2"/>
           <IonCardContent>
-            Meuh
+            45€
           </IonCardContent>
           <IonCheckbox class="item-checkbox-right"></IonCheckbox>
         </IonCard>
-     
 
-    
-        <IonCard>
+
+
+        <IonCard href="./Cow3">
           <IonCardHeader>
-            <IonCardTitle>Vache n°3</IonCardTitle>
+            <IonCardTitle>Vache 3D</IonCardTitle>
           </IonCardHeader>
-          <img src="assets/cow_3.jpg"/>
+          <img src="assets/cow_3.jpg" alt="cow_3"/>
           <IonCardContent>
-            Meuh
+            4.90€
           </IonCardContent>
           <IonCheckbox class="item-checkbox-right"></IonCheckbox>
         </IonCard>
- 
+
+        <IonCard href="./Cow4">
+          <IonCardHeader>
+            <IonCardTitle>Vache en kit</IonCardTitle>
+          </IonCardHeader>
+          <img src="assets/vache_occasion.jpg" alt="cow_4"/>
+          <IonCardContent>
+            5€
+          </IonCardContent>
+          <IonCheckbox class="item-checkbox-right"></IonCheckbox>
+        </IonCard>
 
 
-       
+        <IonCard href="./Milk1">
+          <IonCardHeader>
+            <IonCardTitle>Lait</IonCardTitle>
+          </IonCardHeader>
+          <img src="assets/milk_1.jpg" alt="milk_1"/>
+          <IonCardContent>
+            3€
+          </IonCardContent>
+          <IonCheckbox class="item-checkbox-right"></IonCheckbox>
+        </IonCard>
+
+        <IonCard href="./Milk2">
+          <IonCardHeader>
+            <IonCardTitle>Lait amélioré +1</IonCardTitle>
+          </IonCardHeader>
+          <img src="assets/milk_2.jpg" alt="milk_2"/>
+          <IonCardContent>
+            5€
+          </IonCardContent>
+          <IonCheckbox class="item-checkbox-right"></IonCheckbox>
+        </IonCard>
+
+        <IonCard href="./Milk3">
+          <IonCardHeader>
+            <IonCardTitle>Lait amélioré +2</IonCardTitle>
+          </IonCardHeader>
+          <img src="assets/milk_3.jpg"  alt="milk_3"/>
+          <IonCardContent>
+            8€
+          </IonCardContent>
+          <IonCheckbox class="item-checkbox-right"></IonCheckbox>
+        </IonCard>
+
       </IonContent>
     </IonPage>
   );
