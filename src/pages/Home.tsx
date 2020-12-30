@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
         <IonCard href="./Cow1">
           <IonCardHeader>
-            <IonCardTitle>Vache lambda</IonCardTitle>
+            <IonCardTitle>Vache standard</IonCardTitle>
           </IonCardHeader>
           <img src="assets/cow_1.jpg" alt="cow_1"/>
           <IonCardContent>
@@ -46,11 +46,11 @@ const Home: React.FC = () => {
 
         <IonCard href="./Cow3">
           <IonCardHeader>
-            <IonCardTitle>Vache 3D</IonCardTitle>
+            <IonCardTitle>Vache Minecraft</IonCardTitle>
           </IonCardHeader>
           <img src="assets/cow_3.jpg" alt="cow_3"/>
           <IonCardContent>
-            4.90€
+            23.95€
           </IonCardContent>
           <IonCheckbox class="item-checkbox-right"></IonCheckbox>
         </IonCard>

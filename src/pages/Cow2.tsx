@@ -14,9 +14,10 @@ const Cow2: React.FC = () => {
       <IonContent>
         <img src="assets/cow_2.jpg" />
         <h1><b>Vache sourire</b></h1>
-        <h3>28€</h3>
-        <p>Vache est le nom vernaculaire donné à la femelle du mammifère domestique de l'espèce Bos taurus, un ruminant appartenant à la famille des bovidés, généralement porteur de deux cornes sur le front.
-        Les individus mâles sont appelés taureaux et les jeunes, veaux. Une génisse ou vachette, appelée aussi taure au Québec ou dans le Poitou, est une vache qui n'a pas vêlé. Descendant de plusieurs sous-espèces d'aurochs, les bovins actuels (zébus compris) sont élevés pour produire du lait et de la viande, ou comme animaux de trait. En Inde, la vache est sacrée. Le mot vache vient du latin vacca, de même sens.
+        <h3>45€</h3>
+        <p>
+          Vache qui sourit. <br />
+          Et c'est très beau.
         </p>
       </IonContent>
     </IonPage>
