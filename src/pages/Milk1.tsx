@@ -1,17 +1,17 @@
 import React from 'react';
 import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Milk1.css';
+import './Product.css';
 
 const Milk1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color="primary">
-          <IonTitle>Delivecow</IonTitle>
+          <IonTitle class="Title">Delivecow</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent class="ProductText">
         <img src="assets/milk_1.jpg" />
         <h1><b>Lait</b></h1>
         <h3>3€</h3>

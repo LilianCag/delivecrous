@@ -15,9 +15,15 @@ const Cart: React.FC = () => {
       <IonContent>
         <h1><b>Vos articles</b></h1>
         
+
+
       </IonContent>
     </IonPage>
   );
 };
 
 export default Cart;
+
+function ShowCart(product: string, price: number){
+  console.log(product+" "+price+"€ affiché dans le panier.");
+}

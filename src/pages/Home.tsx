@@ -3,8 +3,10 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCheckbox, IonC
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import './Cow1'
+import './Cart'
 import Cow1 from './Cow1';
 import { logoWindows } from 'ionicons/icons';
+import { JsxEmit } from 'typescript';
 
 const form = [
   { val: 'cow1', isChecked: false},
@@ -19,7 +21,7 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-
+<IonList>
       <IonGrid>
         <IonRow>
           <IonCol>
@@ -28,12 +30,15 @@ const Home: React.FC = () => {
             <IonCardHeader>
               <IonCardTitle class="FontTitle">Vache standard</IonCardTitle>
             </IonCardHeader>
-            <img src="assets/cow_1.jpg" alt="cow_1" />
+            <img src="assets/cow_1.jpg" alt="cow_1"/>
             <IonCardContent>
               28€
-          
             </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+            <IonCheckbox class="CheckboxStyle" value="cow2" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("cow1",28);
+            }}></IonCheckbox>
+            
           </IonCard>
 
           </IonCol>
@@ -47,7 +52,10 @@ const Home: React.FC = () => {
             <IonCardContent>
               45€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="cow2" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Vache sourire",45);
+            }}></IonCheckbox>
           </IonCard>
 
           </IonCol>
@@ -64,7 +72,10 @@ const Home: React.FC = () => {
             <IonCardContent>
               23.95€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="cow3" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Vache Minecraft",23.95);
+            }}></IonCheckbox>
           </IonCard>
 
           </IonCol>
@@ -79,7 +90,10 @@ const Home: React.FC = () => {
             <IonCardContent>
               5€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="cow3" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Vache en kit",5);
+            }}></IonCheckbox>
           </IonCard>
 
           </IonCol>
@@ -94,10 +108,13 @@ const Home: React.FC = () => {
             <IonCardContent>
               3€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="milk1" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Lait",3);
+            }}></IonCheckbox>
           </IonCard>
-</IonCol>
-<IonCol>
+          </IonCol>
+          <IonCol>
           <IonCard href="./Milk2" class="CardStyle">
             <IonCardHeader>
               <IonCardTitle class="FontTitle">Lait amélioré +1</IonCardTitle>
@@ -106,7 +123,10 @@ const Home: React.FC = () => {
             <IonCardContent>
               5€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="milk2" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Lait amélioré+1",5);
+            }}></IonCheckbox>
           </IonCard>
           </IonCol>
           </IonRow>
@@ -121,7 +141,10 @@ const Home: React.FC = () => {
             <IonCardContent>
               8€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="milk3" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Lait amélioré +2",8);
+            }}></IonCheckbox>
           </IonCard>
           </IonCol>
           <IonCol>
@@ -131,16 +154,25 @@ const Home: React.FC = () => {
             </IonCardHeader>
             <img src="assets/milk_4.jpg" alt="milk_4" />
             <IonCardContent>
-              8€
+              12€
           </IonCardContent>
-            <IonCheckbox class="CheckboxStyle"></IonCheckbox>
+          <IonCheckbox class="CheckboxStyle" value="milk4" onIonChange={e => {
+              if (e.detail.value == undefined) return;
+              UpdateCart("Lait amélioré +3",12);
+            }}></IonCheckbox>
           </IonCard>
           </IonCol>
           </IonRow>
           </IonGrid>
-        
+          </IonList>
       </IonContent>
     </IonPage>
   );
 };
 export default Home;
+
+
+function UpdateCart(product: string, price: number){
+  console.log(product+" "+price+"€ ajouté au panier.");
+  //ShowCart(product, price);
+}

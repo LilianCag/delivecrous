@@ -3,7 +3,7 @@ import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from 
 import ExploreContainer from '../components/ExploreContainer';
 import './Product.css';
 
-const Cow1: React.FC = () => {
+const Milk3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,16 +11,18 @@ const Cow1: React.FC = () => {
           <IonTitle class="Title">Delivecow</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <img src="assets/cow_1.jpg" />
       <IonContent class="ProductText">
-        <h1><b>Vache standard</b></h1>
-        <h3>28€</h3>
+        <img src="assets/milk_4.jpg" />
+        <h1><b>Lait amélioré +3</b></h1>
+        <h3>12€</h3>
         <p>
-          La vache est un bovidé domestique à cornes, femelle du taureau élevée principalement pour ses qualités reproductrice et laitière.
+          Santé : +8 <br/>
+          Lait provenant des vaches transformé en fromage. <br/>
+          En plus, c'est du comté.
         </p>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Cow1;
+export default Milk3;

@@ -20,6 +20,7 @@ import Cow4 from './pages/Cow4';
 import Milk1 from './pages/Milk1';
 import Milk2 from './pages/Milk2';
 import Milk3 from './pages/Milk3';
+import Milk4 from './pages/Milk4';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -55,6 +56,7 @@ const App: React.FC = () => (
           <Route path="/milk1" component={Milk1} exact={true} />
           <Route path="/milk2" component={Milk2} exact={true} />
           <Route path="/milk3" component={Milk3} exact={true} />
+          <Route path="/milk4" component={Milk4} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
  
