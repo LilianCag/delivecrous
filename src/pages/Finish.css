@@ -1,0 +1,21 @@
+.ThanksStyle{
+    text-align: center;
+    padding-top: 25%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.TextStyle{
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.FinishStyle {
+    top: 25%;
+    text-align: center;
+}
+
+.ButtonFinishStyle{
+    width: 50%;
+    
+}

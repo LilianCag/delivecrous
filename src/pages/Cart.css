@@ -1,0 +1,42 @@
+.Title{
+    text-align: center;
+  }
+
+.PageStyle {
+    top: 2%;
+}
+
+.TitleStyle {  
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.TotalStyle {  
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.InputStyle{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.InputStyle2{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.ListTitle{
+    text-align: center;
+    margin-left: 15%;
+}
+
+.ListPrice{
+    text-align: center;
+    margin-left: 5%;
+}
+
+.ButtonStyle{
+    width: 75%;
+    margin-left: 12.5%;
+}

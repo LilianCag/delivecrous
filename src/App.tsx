@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {} from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
@@ -10,7 +10,7 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { home, cart} from 'ionicons/icons';
+import { home, cart } from 'ionicons/icons';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Cow1 from './pages/Cow1';
@@ -21,6 +21,8 @@ import Milk1 from './pages/Milk1';
 import Milk2 from './pages/Milk2';
 import Milk3 from './pages/Milk3';
 import Milk4 from './pages/Milk4';
+import Finish from './pages/Finish';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,43 +43,47 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-        
-        <IonRouterOutlet>
-          <Route path="/home" component={Home} exact={true} />
-          <Route path="/cart" component={Cart} exact={true} />
-          <Route path="/cow1" component={Cow1} exact={true} />
-          <Route path="/cow2" component={Cow2} exact={true} />
-          <Route path="/cow3" component={Cow3} exact={true} />
-          <Route path="/cow4" component={Cow4} exact={true} />
-          <Route path="/milk1" component={Milk1} exact={true} />
-          <Route path="/milk2" component={Milk2} exact={true} />
-          <Route path="/milk3" component={Milk3} exact={true} />
-          <Route path="/milk4" component={Milk4} exact={true} />
-          <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
-        </IonRouterOutlet>
- 
-    
-   
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="Home" href="/home">
-            <IonIcon icon={home} />
-            <IonLabel>Accueil</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="Cart" href="/cart">
-            <IonIcon icon={cart} />
-            <IonLabel>Panier</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-     
-      </IonTabs>
-    </IonReactRouter>
-  </IonApp>
-);
 
+const App: React.FC = () => {
+
+
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonTabs>
+
+          <IonRouterOutlet>
+            <Route path="/home" component={Home} exact={true} />
+            <Route path="/cart" component={Cart} exact={true} />
+            <Route path="/cow1" component={Cow1} exact={true} />
+            <Route path="/cow2" component={Cow2} exact={true} />
+            <Route path="/cow3" component={Cow3} exact={true} />
+            <Route path="/cow4" component={Cow4} exact={true} />
+            <Route path="/milk1" component={Milk1} exact={true} />
+            <Route path="/milk2" component={Milk2} exact={true} />
+            <Route path="/milk3" component={Milk3} exact={true} />
+            <Route path="/milk4" component={Milk4} exact={true} />
+            <Route path="/finish" component={Finish} exact={true} />
+            <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
+          </IonRouterOutlet>
+
+
+
+          <IonTabBar slot="bottom">
+            <IonTabButton tab="Home" href="/home">
+              <IonIcon icon={home} />
+              <IonLabel>Accueil</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="Cart" href="/cart">
+              <IonIcon icon={cart} />
+              <IonLabel>Panier</IonLabel>
+            </IonTabButton>
+          </IonTabBar>
+
+        </IonTabs>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 export default App;
-
 

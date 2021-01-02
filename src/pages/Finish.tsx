@@ -1,9 +1,8 @@
 import React from 'react';
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Cow1.css';
+import { IonButton, IonContent, IonHeader, IonLabel, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
+import './Finish.css';
 
-const Cow1: React.FC = () => {
+const Finish: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,16 +10,17 @@ const Cow1: React.FC = () => {
           <IonTitle>Delivecow</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <img src="assets/cow_1.jpg" />
-        <h1><b>Vache lambda</b></h1>
-        <h3>28€</h3>
-        <p>Vache est le nom vernaculaire donné à la femelle du mammifère domestique de l'espèce Bos taurus, un ruminant appartenant à la famille des bovidés, généralement porteur de deux cornes sur le front.
-        Les individus mâles sont appelés taureaux et les jeunes, veaux. Une génisse ou vachette, appelée aussi taure au Québec ou dans le Poitou, est une vache qui n'a pas vêlé. Descendant de plusieurs sous-espèces d'aurochs, les bovins actuels (zébus compris) sont élevés pour produire du lait et de la viande, ou comme animaux de trait. En Inde, la vache est sacrée. Le mot vache vient du latin vacca, de même sens.
-        </p>
+      <IonContent class="FinishStyle">
+        
+        <IonLabel class="ThanksStyle">Merci pour votre achat !</IonLabel>
+        <br /> <br /> <br />
+        <IonText class="TextStyle">Vos vaches et vos produits laitiers vous seront envoyés sous peu par la poste.</IonText>
+        <br /> <br /> <br />
+        <IonButton class="ButtonFinishStyle" href="/home">Retour à l'accueil</IonButton>
+
       </IonContent>
     </IonPage>
   );
 };
 
-export default Cow1;
+export default Finish;

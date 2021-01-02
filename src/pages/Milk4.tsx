@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Product.css';
 
 const Milk3: React.FC = () => {
@@ -12,7 +11,7 @@ const Milk3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="ProductText">
-        <img src="assets/milk_4.jpg" />
+        <img src="assets/milk_4.jpg"  alt=""/>
         <h1><b>Lait amélioré +3</b></h1>
         <h3>12€</h3>
         <p>

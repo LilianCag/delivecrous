@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Product.css';
 
 const Cow3: React.FC = () => {
@@ -12,7 +11,7 @@ const Cow3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="ProductText">
-        <img src="assets/cow_3.jpg" />
+        <img src="assets/cow_3.jpg"  alt=""/>
         <h1><b>Vache Minecraft</b></h1>
         <h3>23.95€</h3>
         <p>
