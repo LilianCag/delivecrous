@@ -144,7 +144,6 @@ async function ShowCart() {
       }
     }
   }
-  
 }
 
 //Fonction Achat
@@ -159,7 +158,6 @@ function buy() {
   console.log("Street: "+street);
   console.log("City: "+city);
   console.log("Postalcode: "+postalcode);
-
 
   for (let i = 0; i < 8; i++) {
 
