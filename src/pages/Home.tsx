@@ -30,8 +30,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     28€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="cow2" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(0);
                   }}></IonCheckbox>
                 </IonCard>
@@ -46,8 +46,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     45€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="cow2" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(1);
                   }}></IonCheckbox>
                 </IonCard>
@@ -64,8 +64,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     23.95€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="cow3" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(2);
                   }}></IonCheckbox>
                 </IonCard>
@@ -80,8 +80,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     5€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="cow3" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(3);
                   }}></IonCheckbox>
                 </IonCard>
@@ -96,8 +96,8 @@ const Home: React.FC = () => {
                   </IonCardHeader>
                   <img src="assets/milk_1.jpg" alt="milk_1" />
                   <IonCardContent> 3€ </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="milk1" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(4);
                   }}>
                   </IonCheckbox>
@@ -113,8 +113,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     5€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="milk2" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(5);
                   }}></IonCheckbox>
                 </IonCard>
@@ -131,8 +131,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     8€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="milk3" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(6);
                   }}></IonCheckbox>
                 </IonCard>
@@ -147,8 +147,8 @@ const Home: React.FC = () => {
                   <IonCardContent>
                     12€
                   </IonCardContent>
-                  <IonCheckbox class="CheckboxStyle" value="milk4" onIonChange={e => {
-                    if (e.detail.value === undefined) return;
+                  <IonCheckbox class="CheckboxStyle" onIonChange={e => {
+                    
                     UpdateCart(7);
                   }}></IonCheckbox>
                 </IonCard>

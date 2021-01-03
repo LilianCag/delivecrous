@@ -113,7 +113,7 @@ const Cart: React.FC = () => {
             }
           </IonList><br />
           <IonLabel class="TotalStyle">Total : {total}€</IonLabel><br /><br />
-          <IonButton   onClick={buy} class="ButtonStyle">Acheter</IonButton>
+          <IonButton type="submit" onClick={buy} class="ButtonStyle">Acheter</IonButton>
         </form>
       </IonContent>
     </IonPage>
@@ -155,10 +155,16 @@ function buy() {
   var city = document.getElementsByTagName("input")[1].value;
   var postalcode = document.getElementsByTagName("input")[2].value;
 
+  console.log("Affichage des valeurs des champs")
+  console.log("Street: "+street);
+  console.log("City: "+city);
+  console.log("Postalcode: "+postalcode);
+
+
   for (let i = 0; i < 8; i++) {
 
-    //Vérification si le panier est vide & si le 
-    if (listproducts[i] === true && street !== "" && city !== "" && postalcode !== "") {         
+    //Vérification si le panier est vide & si l'adresse a été entrée
+    if (listproducts[i] === true && street.localeCompare("") === 1 && city.localeCompare("") === 1 && postalcode.localeCompare("") === 1) {         
       deleteCart();                         //Le panier est repassé à false
       document.location.href = "/finish";   //Redirection vers la page /finish
     }
